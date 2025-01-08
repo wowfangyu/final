@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+    <title>110570004簡芳榆期末作業</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins:400,500,600%7CTeko:300,400,500%7CMaven+Pro:500">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+       .btn-purple {
+            background-color: #6f42c1; /* 紫色 */
+            border-color: #6f42c1;   /* 紫色 */
+            color: white;           /* 白色文字 */
+        }
+        .vertical-text {
+            writing-mode: vertical-rl; /* 設置文字書寫模式為垂直 */
+        }
+    </style>
+    <script>
+      function show()
+      {
+        money = 0;
+        //水果
+          if(c1.checked == true)
+          {
+            money += 500;
+          }      
+          if(c2.checked == true)
+          {
+            money += 600;
+          }
+          if(c3.checked == true)
+          {
+            money += 700;
+          }
+        //飲料
+          if(r1.checked == true)
+          {
+            money += 70;
+          }
+          else if(r2.checked == true)
+          {
+            money += 60;
+          }
+          else if(r3.checked == true)
+          {
+            money += 50;
+          }
+          alert( "總金額 = " + money )
+      }
+      function show1()
+      {
+        document.getElementById("t1").style.fontSize = ss1.value + "px";          
+      }
+      function show3()
+      {          
+        document.getElementById("t1").style.color = cc2.value;   
+          
+      }
+      function show2()
+      { 
+        document.getElementById("t1").style.backgroundColor = cc1.value;   
+      
+      }
+
+      function show5()
+      {
+        a1 = Math.floor(Math.random()*10+1)
+        if(a1==1)
+        {
+          document.getElementById("nn1").innerHTML = "恭喜你，抽中100萬元"
+        }
+        else if(a1==2)
+        {
+          document.getElementById("nn1").innerHTML = "恭喜你，抽中100元"
+        }
+        else if(a1==3)
+        {
+          document.getElementById("nn1").innerHTML = "恭喜你，抽中10元"
+        }
+        else
+        {
+          document.getElementById("nn1").innerHTML = "抽中1元"
+        }
+        
+      }
+    </script>
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="preloader-body">
+        <div class="cssload-container">
+          <div class="cssload-speeding-wheel"></div>
+        </div>
+      </div>
+    </div>
+    <div class="page">
+      <!-- Page Header-->
+      <header class="section page-header">
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <!-- RD Navbar Panel-->
+                <div class="rd-navbar-panel">
+                  <!-- RD Navbar Toggle-->
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                  <!-- RD Navbar Brand-->
+                  <div class="rd-navbar-brand"><a class="brand" href="index.html"><img src="images/logo-default-191x52.png" alt="" width="191" height="52"/></a></div>
+                </div>
+                <div class="rd-navbar-main-element">
+                  <div class="rd-navbar-nav-wrap">
+                    <!-- RD Navbar Search-->
+                    <div class="rd-navbar-search">
+                      <button class="rd-navbar-search-toggle" data-rd-navbar-toggle=".rd-navbar-search"><span></span></button>
+                      <form class="rd-search" action="search-results.html" data-search-live="rd-search-results-live" method="GET">
+                        <div class="form-wrap">
+                          <label class="form-label" for="rd-navbar-search-form-input">Search...</label>
+                          <input class="rd-navbar-search-form-input form-input" id="rd-navbar-search-form-input" type="text" name="s" autocomplete="off"/>
+                          <div class="rd-search-results-live" id="rd-search-results-live"></div>
+                        </div>
+                        <button class="rd-search-form-submit fl-bigmug-line-search74" type="submit"></button>
+                      </form>
+                    </div>
+                    <!-- RD Navbar Share-->
+                    <div class="rd-navbar-share">
+                      <div class="rd-navbar-share-icon fl-bigmug-line-share27" data-rd-navbar-toggle=".rd-navbar-share-list"></div>
+                      <ul class="list-inline rd-navbar-share-list">
+                        <li class="rd-navbar-share-list-item"><a class="icon fa fa-facebook" href="#"></a></li>
+                        <li class="rd-navbar-share-list-item"><a class="icon fa fa-twitter" href="#"></a></li>
+                        <li class="rd-navbar-share-list-item"><a class="icon fa fa-google-plus" href="#"></a></li>
+                        <li class="rd-navbar-share-list-item"><a class="icon fa fa-instagram" href="#"></a></li>
+                      </ul>
+                    </div>
+                    <!-- RD Navbar Nav-->
+                    <ul class="rd-navbar-nav">
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href="#index">首頁</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="#SEO">SEO</a>
+                        <ul class="rd-menu rd-navbar-dropdown">
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#SEO">第1題(原始文案)</a></li>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#keySEO">第2題(關鍵字SEO)</a></li>
+                        </ul>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="#RWD">RWD元件</a>
+                        <!-- RD Navbar Dropdown-->
+                        <ul class="rd-menu rd-navbar-dropdown">                          
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#RWD">第3題(Carousel圖片輪流播放)</a></li>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#Offcanvas">第4題(Offcanvas畫布)</a></li>
+                        </ul>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="#a5">網頁元件</a>
+                        <ul class="rd-menu rd-navbar-dropdown">
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#a5">第5題(單選複選)</a></li>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#a6">第6題(下拉選單)</a></li>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#a7">第7題(百萬抽獎)</a></li>                         
+                        </ul>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="#ECommerce">複習ECommerce重點</a>
+                        <!-- RD Navbar Dropdown-->                        
+                      </li>                      
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- Swiper-->
+      <section id="index" class="section swiper-container swiper-slider swiper-slider-classic" data-loop="true" data-swiper='{"loop":true,"autoplay":{"delay":5000},"effect":"slide","simulateTouch":true,"direction":"vertical","nav":false}'>
+        <div class="swiper-wrapper text-center">
+          <div class="swiper-slide" data-slide-bg="images/slider-1-slide-1-1770x742.jpg">
+            <div class="swiper-slide-caption section-md">
+              <div class="container">
+                <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">北科大經管系</h1>
+                <p class="text-width-large" data-caption-animate="fadeInRight" data-caption-delay="100">Since our establishment, we have been delivering high-quality and sustainable software solutions for corporate purposes of worldwide businesses.</p><a class="button button-primary button-ujarak" href="#" target="_blank" data-caption-animate="fadeInUp" data-caption-delay="200">Get in touch</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" data-slide-bg="images/slider-1-slide-2-1770x742.jpg">
+            <div class="swiper-slide-caption section-md">
+              <div class="container">
+                <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">電子商務期末考</h1>
+                <p class="text-width-large" data-caption-animate="fadeInRight" data-caption-delay="100">We are a team of qualified software developers, aimed at creating unique and powerful tools for your business & everyday life.</p><a class="button button-primary button-ujarak" href="#" target="_blank" data-caption-animate="fadeInUp" data-caption-delay="200">Get in touch</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" data-slide-bg="images/slider-1-slide-3-1770x742.jpg">
+            <div class="swiper-slide-caption section-md">
+              <div class="container">
+                <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">SEO實作，RWD實作</h1>
+                <p class="text-width-large" data-caption-animate="fadeInRight" data-caption-delay="100">The software solutions developed by our company have been numerously awarded for usability and innovative features.</p><a class="button button-primary button-ujarak" href="#" target="_blank" data-caption-animate="fadeInUp" data-caption-delay="200">Get in touch</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Swiper Pagination-->
+        <div class="swiper-pagination__module">
+          <div class="swiper-pagination__fraction"><span class="swiper-pagination__fraction-index">00</span><span class="swiper-pagination__fraction-divider">/</span><span class="swiper-pagination__fraction-count">00</span></div>
+          <div class="swiper-pagination__divider"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+          <!-- 期末考放置語法區-->
+    <section id="SEO" class="section section-sm section-first bg-default text-center">
+      <div class="container">
+        <div class="row row-30 justify-content-center">
+          <h3>SEO 第1題(原始文案)</h3>
+          <hr>
+          <h4><b>全新生活必備神器，讓您的每一天更高效！</b></h4>
+          <h5>
+            優惠推薦經濟實惠、靈活彈性的收納箱、收納盒或整理箱，能根據你的需求來量身搭配。
+            <br>分門別類放置物品，方便搜尋拿取。
+            <br>還可以混搭不同尺寸、顏色、增添標籤，你也可以選擇透明或大型的置物箱，根據你正在進行的創意項目來設立有著個人特色的收納系統。
+            <br>選用合適風格的置物籃或抽屜收納盒，不只展現你的整理功力，更能秀出你的個人風格。
+          </h5>
+          <img src="images/收納盒.png" alt="抽屜收納盒" title="抽屜收納盒">
+        </div>
+      </div>
+    </section>
+
+    <section id="keySEO" class="section section-sm section-first bg-default text-center">
+      <div class="container">
+        <div class="row row-30 justify-content-center">
+          <hr>
+          <h3>
+            SEO 第2題(關鍵字SEO)
+          </h3>          
+          <hr>          
+          <h4><b>全新生活必備神器，讓您的每一天更高效！</b></h4>
+          <h5 align=left>
+            優惠推薦經濟實惠、靈活彈性的【透明收納箱】、【抽屜收納盒】或【衣物收納盒】，能根據你的需求來量身搭配。
+            <br>分門別類放置物品，方便搜尋拿取。
+            <br>還可以混搭不同尺寸、顏色、增添標籤，你也可以選擇【透明收納盒】或大型的【衣櫃收納盒】，根據你正在進行的創意項目來設立有著個人特色的收納系統。
+            <br>選用合適風格的【木製收納盒】或【抽屜式收納盒】，不只展現你的整理功力，更能秀出你的個人風格。
+            <br>特別推薦【化妝品收納盒】與【首飾收納盒】，幫助你輕鬆整理小物，讓桌面時刻保持整潔！還有適合日常的【公仔收納盒】與【文具收納盒】，讓興趣與工作井然有序。
+            <br>快來選購【鞋子收納盒】、【電源線收納盒】和【冰箱收納】等多功能神器，讓家居生活更加高效便利！
+          </h5> 
+          <p>(關鍵字清單在圖後)</p>         
+          <img src="images/收納盒.png" alt="抽屜收納盒" title="抽屜收納盒">
+          <hr>
+          <h3><b>長尾關鍵字清單：</b></h3>
+          <h5>
+            <br>抽屜 收納 盒
+            <br>化妝品 收納
+            <br>透明 收納 盒
+            <br>冰箱 收納
+            <br>電線 收納 盒
+            <br>透明 收納 箱
+            <br>木製 收納 盒
+            <br>電源 線 收納 盒
+            <br>鞋子 收納 盒
+            <br>鞋 盒 收納
+            <br>衣物 收納 盒
+            <br>口罩 收納 盒
+            <br>飾品 收納 盒
+            <br>收納 鞋 盒
+            <br>衣服 收納 盒
+            <br>衣櫃 收納 盒
+            <br>收納 盒 抽屜
+            <br>化妝品 收納 盒
+            <br>首飾 收納 盒
+            <br>文具 收納 盒
+          </h5>
+        </div>
+      </div>
+    </section>
+
+    <section id="RWD" class="section section-sm section-first bg-default text-center">
+      <div class="container">
+        <div class="row row-30 justify-content-center">
+          <h3>RWD 第3題(Carousel圖片輪流播放)</h3>
+          <hr>
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="pic/p1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>第1張圖片</h5>
+                  <p>在南極的夏天，海天一色</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="pic/p2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>第2張圖片</h5>
+                  <p>夕陽西下，景色很漂亮</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="pic/p3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>第3張圖片</h5>
+                  <p>夏天在公園，把帽子放在草地上</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Offcanvas" class="section section-sm section-first bg-default text-center">
+        <div class="container">
+          <div class="row row-30 justify-content-center">
+            <h3>第4題(Offcanvas畫布)</h3>
+            <hr>
+            <button class="btn btn-purple" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">上聯</button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header">
+                <h5 id="offcanvasRightLabel">上聯</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body bg-danger text-dark vertical-text d-flex justify-content-center align-items-center" style="height: 100%;">
+                <h2><b>天增歲月人增壽</b></h2>
+              </div>
+            </div>
+
+            <button class="btn btn-purple" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">下聯</button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasLeft" aria-labelledby="offcanvasLeftLabel">
+              <div class="offcanvas-header">
+                <h5 id="offcanvasLeftLabel">下聯</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body bg-danger text-dark vertical-text d-flex justify-content-center align-items-center" style="height: 100%;">
+                <h2><b>春滿乾坤福滿門</b></h2>
+              </div>
+            </div>
+
+            <button class="btn btn-purple" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">橫批</button>
+            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+              <div class="offcanvas-header">
+                <h5 id="offcanvasTopLabel">橫批</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body bg-danger text-dark d-flex justify-content-center align-items-center" style="height: 100%;">
+                <h2><b>吉星高照</b></h2>
+              </div>
+            </div>            
+
+          </div>
+        </div>
+    </section>
+
+    <section id="a5" class="section section-sm section-first bg-default text-center">
+      <div class="container">
+        <div class="row row-30 justify-content-center">
+          <h3>第5題(單選複選) 大潤發購物</h3>
+          <hr>
+          <h4>
+            <label>水果</label>
+            <p>
+            <input id="c1" type="checkbox"> 日本麝香葡萄1袋：500元<br>
+            <input id="c2" type="checkbox"> 美國五爪蘋果10個：600元<br>
+            <input id="c3" type="checkbox"> 泰國榴槤：700元<br>
+            </p>
+            <label class="s3">飲料</label>
+            <p>            
+            <input name="lcd" id="r1" type="radio"> 光泉柳橙汁：70元<br>
+            <input name="lcd" id="r2" type="radio"> 義美無糖豆漿：60元<br>
+            <input name="lcd" id="r3" type="radio"> 統一奶茶：50元<br>
+            </p>
+            <p>
+              <input onclick="show()" class="s2" type="button" value="計算金額">
+            </p>
+          </h4>
+        </div>
+      </div>
+    </section>
+
+    <section id="a6" class="section section-sm section-first bg-default text-center">
+      <div class="container">
+        <div class="row row-30 justify-content-center">
+          <h3>第6題(下拉選單) 下拉選單設定文字大小</h3>
+          <hr>
+          <h3>
+            文字大小：
+            <select id="ss1" onchange="show1()" class="s1">
+              <option>25</option>
+              <option>50</option>
+              <option>75</option>
+              <option>100</option>
+            </select>
+          </h3>
+          <h3>
+            背景顏色：<input id="cc1" onchange="show2()" type="color">
+          </h3>
+          <h3>
+            文字顏色：<input id="cc2" onchange="show3()" type="color">
+          </h3>          
+          <p id="t1">健康如意</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="a7" class="section section-sm section-first bg-default text-center">
+      <div class="container">
+        <div class="row row-30 justify-content-center">
+          <h3>第7題(百萬抽獎)</h3>
+          <hr>
+          <p class="text">
+            <button onclick="show5()" class="btn btn-danger">百萬抽獎</button>
+            <h3 id="nn1"></h3>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="ECommerce" class="section section-sm section-first bg-default text-center">
+      <div class="container">
+        <div class="row row-30 justify-content-center">
+          <h3>複習ECommerce重點</h3>
+          <hr>
+          <h4 class="text">
+            1.美國2025年元旦發生多起汽車爆炸事件，歹徒到Turo租車，請問Turo屬於哪些類型的電商經營模式？<br>
+            <b>P2P、O2O</b><br>
+
+            2.我到華碩官方的旗艦店網站買筆電，請問這屬於什麼類型的電商經營模式？<br>
+            <b>B2C</b><br>
+
+            3.我到蝦皮購買充電寶，到蝦皮店到店取貨，請問這屬於什麼類型的電商經營模式？<br>
+            <b>O2O</b><br>
+
+            4.天貓，淘寶，分別屬於什麼類型的電商經營模式？<br>
+            <b>
+              天貓屬於B2C，淘寶屬於C2C
+            </b><br>
+
+            5.footpanda外賣平台屬於什麼類型的電商經營模式？<br>
+            <b>O2O</b><br>
+
+            6.你的電商要自建網站，網站要雲端委管，請問雲端託管的英文？<br>
+            <b>Cloud Hosting</b><br>            
+            請問，目前全世界最大的前三大雲端託管品牌是哪些平台？<br>
+            <b>AWS.Azure.GCP</b><br> 
+
+            7.本學期你做的網站hw1~hw5，請問你上傳到什麼平台來做雲端託管？<br>
+            <b>github</b><br> 
+
+            8.由搜尋引擎（google，yahoo，bing...）而來到你的電商的流量，專業術語稱為什麼流量？（請寫中文，及英文）<br>
+            <b>自然流量（Organic Traffic）</b><br> 
+
+            9.電商最後要處理【物流，金流】，請寫【物流，金流】的英文<br>
+            <b>
+              物流 ：Logistics<br>
+              金流 ：Payment Flow
+            </b><br>            
+
+            10.請寫出上課提到過的，增加SEO效果的6種實務做法？<br>
+            <b>
+              1. 進行關鍵字研究<br>
+              2. 自然融入關鍵字<br>
+              3. 強調內容的實用性與價值<br>
+              4. 優化圖片<br>
+              5. 技術性 SEO<br>
+              6. 建立外部連結
+            </b><br> 
+          </h4>
+        </div>
+      </div>
+    </section>
+      
+        <div class="container footer-bottom-panel wow fadeInUp">
+          <!-- Rights-->
+          <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span> <span>DreamSoft</span>. All rights reserved. <a href="privacy-policy.html"> Privacy Policy.</a> <a target="_blank" href="https://www.mobanwang.com/" title="网站模板">网站模板</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+    <!-- Global Mailform Output-->
+    <div class="snackbars" id="form-output-global"></div>
+    <!-- Javascript-->
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
